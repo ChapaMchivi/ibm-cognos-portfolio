@@ -1,5 +1,3 @@
-/* style.css */
-
 /* ---------------------
    Base Styles
 ---------------------- */
@@ -75,7 +73,7 @@ figcaption {
 
 .navbar li a:hover {
   background-color: #0052a3;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
@@ -95,13 +93,35 @@ figcaption {
   border-radius: 6px;
   padding: 1em;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .dashboard-gallery img {
   width: 100%;
+  height: auto;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  cursor: zoom-in;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px #0066cc;
+}
+
+/* ---------------------
+   Lightbox Caption Overrides
+---------------------- */
+.lightboxOverlay {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.lb-caption {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95em;
+  text-align: center;
+  color: #eee;
 }
 
 /* ---------------------
@@ -123,5 +143,13 @@ figcaption {
   .navbar ul {
     flex-direction: column;
     gap: 1em;
+  }
+
+  .dashboard-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-section {
+    padding: 1em;
   }
 }

@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>IBM Cognos Analytics Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 </head>
 <body>
 
@@ -30,27 +36,35 @@
       <li><strong>Focus Areas:</strong> Recall tracking, sentiment analysis, sales trends, system impact</li>
     </ul>
 
-   <h4 id="excel-gallery">🧪 Initial Prototyping in Excel</h4>
-<p>Early-stage Excel dashboards enabled exploratory analysis across profitability, dealership performance, and model-specific trends.</p>
+    <h4 id="excel-gallery">🧪 Initial Prototyping in Excel</h4>
+    <p>Early-stage Excel dashboards enabled exploratory analysis across profitability, dealership performance, and model-specific trends.</p>
 
-<div class="dashboard-gallery">
-  <figure>
-    <img src="images/excel-profit-by-date-model.jpg" alt="Profit by Date and Model">
-    <figcaption>📈 Monthly Profit by Vehicle Model — Line chart reveals upward trends across Champion, Hudson, LeMans, and Sabre.</figcaption>
-  </figure>
-  <figure>
-    <img src="images/excel-profit-by-year-dealer-id.jpg" alt="Profit by Year and Dealer">
-    <figcaption>💰 Dealer Profit Comparison (2018–2019) — Bar chart visualizes dealership performance side-by-side for two fiscal years.</figcaption>
-  </figure>
-  <figure>
-    <img src="images/excel-profit-of-hudson-models-dealer-id.jpg" alt="Hudson Model Dealer Profit">
-    <figcaption>🚗 Hudson Profit Analysis by Dealer — Dealer ID 1234 emerges as top contributor, with over $721K in profit.</figcaption>
-  </figure>
-  <figure>
-    <img src="images/excel-quantity-sold-dealer-id.jpg" alt="Quantity Sold by Dealer">
-    <figcaption>🛒 Sales Volume by Dealer — Dealer 1288 leads with 2,644 units sold; total across all dealers exceeds 21K.</figcaption>
-  </figure>
-</div>
+    <div class="dashboard-gallery">
+      <figure>
+        <a href="images/excel-profit-by-date-model.jpg" data-lightbox="excel-gallery" data-title="📈 Monthly Profit by Vehicle Model">
+          <img src="images/excel-profit-by-date-model.jpg" alt="Profit by Date and Model" loading="lazy">
+        </a>
+        <figcaption>📈 Monthly Profit by Vehicle Model — Line chart reveals upward trends across Champion, Hudson, LeMans, and Sabre.</figcaption>
+      </figure>
+      <figure>
+        <a href="images/excel-profit-by-year-dealer-id.jpg" data-lightbox="excel-gallery" data-title="💰 Dealer Profit Comparison (2018–2019)">
+          <img src="images/excel-profit-by-year-dealer-id.jpg" alt="Profit by Year and Dealer" loading="lazy">
+        </a>
+        <figcaption>💰 Dealer Profit Comparison (2018–2019) — Bar chart visualizes dealership performance side-by-side for two fiscal years.</figcaption>
+      </figure>
+      <figure>
+        <a href="images/excel-profit-of-hudson-models-dealer-id.jpg" data-lightbox="excel-gallery" data-title="🚗 Hudson Profit Analysis by Dealer">
+          <img src="images/excel-profit-of-hudson-models-dealer-id.jpg" alt="Hudson Model Dealer Profit" loading="lazy">
+        </a>
+        <figcaption>🚗 Hudson Profit Analysis by Dealer — Dealer ID 1234 emerges as top contributor, with over $721K in profit.</figcaption>
+      </figure>
+      <figure>
+        <a href="images/excel-quantity-sold-dealer-id.jpg" data-lightbox="excel-gallery" data-title="🛒 Sales Volume by Dealer">
+          <img src="images/excel-quantity-sold-dealer-id.jpg" alt="Quantity Sold by Dealer" loading="lazy">
+        </a>
+        <figcaption>🛒 Sales Volume by Dealer — Dealer 1288 leads with 2,644 units sold; total across all dealers exceeds 21K.</figcaption>
+      </figure>
+    </div>
 
     <h4>Cloud Provisioning of Cognos</h4>
     <p>Cloud instance provisioned for IBM Cognos Analytics, enabling secure dashboard development, data modeling, and exploratory analysis.</p>
@@ -61,19 +75,27 @@
     <h4>Cognos Dashboard Gallery</h4>
     <div class="dashboard-gallery">
       <figure>
-        <img src="images/cognos-recalls-bar.jpg" alt="Recalls by Model">
+        <a href="images/cognos-recalls-bar.jpg" data-lightbox="cognos-gallery" data-title="📊 Recalls by Model">
+          <img src="images/cognos-recalls-bar.jpg" alt="Recalls by Model" loading="lazy">
+        </a>
         <figcaption>📊 Recalls by Model — Beaufort shows highest recall frequency across automotive systems.</figcaption>
       </figure>
       <figure>
-        <img src="images/cognos-sentiment-treemap.jpg" alt="Sentiment Hierarchy">
+        <a href="images/cognos-sentiment-treemap.jpg" data-lightbox="cognos-gallery" data-title="💬 Sentiment Treemap">
+          <img src="images/cognos-sentiment-treemap.jpg" alt="Sentiment Hierarchy" loading="lazy">
+        </a>
         <figcaption>💬 Sentiment Treemap — Positive sentiment dominates customer feedback hierarchy.</figcaption>
       </figure>
       <figure>
-        <img src="images/cognos-profit-quantity.jpg" alt="Profit and Quantity">
+        <a href="images/cognos-profit-quantity.jpg" data-lightbox="cognos-gallery" data-title="📈 Monthly Profit & Quantity Sold">
+          <img src="images/cognos-profit-quantity.jpg" alt="Profit and Quantity" loading="lazy">
+        </a>
         <figcaption>📈 Monthly Profit & Quantity Sold — Combo chart reveals strong sales and profit surge in Q2.</figcaption>
       </figure>
       <figure>
-        <img src="images/cognos-heatmap-systems.jpg" alt="Recalls by System and Model">
+        <a href="images/cognos-heatmap-systems.jpg" data-lightbox="cognos-gallery" data-title="🔥 Recalls Heatmap">
+          <img src="images/cognos-heatmap-systems.jpg" alt="Recalls by System and Model" loading="lazy">
+        </a>
         <figcaption>🔥 Recalls Heatmap — Shows concentration of Airbag and Engine issues across multiple models.</figcaption>
       </figure>
     </div>
