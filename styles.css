@@ -1,0 +1,127 @@
+/* style.css */
+
+/* ---------------------
+   Base Styles
+---------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.portfolio-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* ---------------------
+   Headings & Typography
+---------------------- */
+h2, h3 {
+  color: #0066cc;
+  margin-bottom: 0.5em;
+}
+
+figcaption {
+  margin-top: 0.6em;
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}
+
+.contact-link {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* ---------------------
+   Navigation Bar
+---------------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0066cc;
+  padding: 1em;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.navbar li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #0052a3;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+/* ---------------------
+   Dashboard Gallery
+---------------------- */
+.dashboard-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5em;
+  margin: 2em 0;
+}
+
+.dashboard-gallery figure {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.dashboard-gallery img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ---------------------
+   Mobile Optimization
+---------------------- */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 1em;
+  }
+
+  h2, h3 {
+    font-size: 1.3em;
+  }
+
+  figcaption {
+    font-size: 0.85em;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
