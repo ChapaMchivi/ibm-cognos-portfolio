@@ -6,7 +6,7 @@ A responsive dashboard site showcasing insights across vehicle recalls, customer
 - Responsive layout, sticky navbar, smooth scrolling
 - Built with HTML/CSS and hosted on GitHub Pages
 
-## Live Demo
-[View the portfolio site](https://chapamchivi.github.io/ibm-cognos-portfolio)
+git commit --allow-empty -m "Trigger rebuild to refresh image serving"
+git push
 
 
